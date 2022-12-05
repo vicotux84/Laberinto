@@ -9,7 +9,6 @@ public class Colectable : MonoBehaviour{
     void Start(){
         pointGame._total_Items++;
     }
-
     private void OnTriggerEnter(Collider other) {
         if(other.tag=="Player"){
             _Colectable.SetActive(false);
