@@ -1,2 +1,2 @@
 # Laberinto
- Juego crado en 24  horas.
+ Juego creado en 24  horas.
