@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour{
-    public GameObject opciones, mainMenu;
-
-
+    
     public void Quit(){
-        Application.Quit();
         Debug.Log("deteniedo juego");
+		Application.Quit();
+        
     }
 
     public void UpdateScreen(){
@@ -27,14 +26,5 @@ public class menu : MonoBehaviour{
 
     public void _LoadScene(string scene) {
           SceneManager.LoadScene(scene);
-    }
-
-    public void Opciones() {
-        opciones.SetActive(true);
-        mainMenu.SetActive(false);        
-    }
-    public void MainMenu() {
-        opciones.SetActive(false);
-        mainMenu.SetActive(true);        
     }
 }
